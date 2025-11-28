@@ -1,16 +1,15 @@
 {
   "name": "html-site",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "build": "mkdir -p ./public && cp -rf ./view/*.html ./public/",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "@cloudflare/workers-types": "^4.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
   }
 }
