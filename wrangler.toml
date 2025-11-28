@@ -1,4 +1,4 @@
-name = "html-site"
+name = "html-site1"
 
 main = "server.js"
 pages_build_output_dir = "./public"
